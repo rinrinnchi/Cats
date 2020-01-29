@@ -15,6 +15,18 @@
 		E75EF5C323E1296D00B8C263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75EF5C123E1296D00B8C263 /* LaunchScreen.storyboard */; };
 		E75EF5CE23E1296D00B8C263 /* CatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF5CD23E1296D00B8C263 /* CatsTests.swift */; };
 		E75EF5D923E1296D00B8C263 /* CatsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF5D823E1296D00B8C263 /* CatsUITests.swift */; };
+		E75EF5E723E129AD00B8C263 /* FactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75EF5E623E129AD00B8C263 /* FactTableViewCell.xib */; };
+		E75EF5E923E12DDF00B8C263 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF5E823E12DDF00B8C263 /* FactTableViewCell.swift */; };
+		E75EF5EB23E12E7C00B8C263 /* FactTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF5EA23E12E7C00B8C263 /* FactTableView.swift */; };
+		E75EF5F223E15B5500B8C263 /* HeadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75EF5F123E15B5500B8C263 /* HeadingView.xib */; };
+		E75EF5F423E15BE200B8C263 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF5F323E15BE100B8C263 /* HeadingView.swift */; };
+		E75EF5F723E164B300B8C263 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF5F623E164B300B8C263 /* Alamofire.framework */; };
+		E75EF5F823E164B300B8C263 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF5F623E164B300B8C263 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E75EF60023E1763600B8C263 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF5FF23E1763600B8C263 /* SwiftyJSON.framework */; };
+		E75EF60123E1763600B8C263 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF5FF23E1763600B8C263 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E75EF60523E1931500B8C263 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF60423E1931500B8C263 /* ObjectMapper.framework */; };
+		E75EF60623E1931500B8C263 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF60423E1931500B8C263 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E75EF60823E1936000B8C263 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF60723E1936000B8C263 /* ApiRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E75EF5F923E164B300B8C263 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E75EF60623E1931500B8C263 /* ObjectMapper.framework in Embed Frameworks */,
+				E75EF60123E1763600B8C263 /* SwiftyJSON.framework in Embed Frameworks */,
+				E75EF5F823E164B300B8C263 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E75EF5B323E1296C00B8C263 /* Cats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75EF5B623E1296C00B8C263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +77,15 @@
 		E75EF5D423E1296D00B8C263 /* CatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75EF5D823E1296D00B8C263 /* CatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsUITests.swift; sourceTree = "<group>"; };
 		E75EF5DA23E1296D00B8C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E75EF5E623E129AD00B8C263 /* FactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactTableViewCell.xib; sourceTree = "<group>"; };
+		E75EF5E823E12DDF00B8C263 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		E75EF5EA23E12E7C00B8C263 /* FactTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableView.swift; sourceTree = "<group>"; };
+		E75EF5F123E15B5500B8C263 /* HeadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadingView.xib; sourceTree = "<group>"; };
+		E75EF5F323E15BE100B8C263 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		E75EF5F623E164B300B8C263 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		E75EF5FF23E1763600B8C263 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		E75EF60423E1931500B8C263 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		E75EF60723E1936000B8C263 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75EF60523E1931500B8C263 /* ObjectMapper.framework in Frameworks */,
+				E75EF60023E1763600B8C263 /* SwiftyJSON.framework in Frameworks */,
+				E75EF5F723E164B300B8C263 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +123,7 @@
 				E75EF5CC23E1296D00B8C263 /* CatsTests */,
 				E75EF5D723E1296D00B8C263 /* CatsUITests */,
 				E75EF5B423E1296C00B8C263 /* Products */,
+				E75EF5F523E164B200B8C263 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +140,10 @@
 		E75EF5B523E1296C00B8C263 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				E75EF5FC23E1654500B8C263 /* DataLayer */,
+				E75EF5EE23E15A3F00B8C263 /* Views */,
 				E75EF5B623E1296C00B8C263 /* AppDelegate.swift */,
 				E75EF5B823E1296C00B8C263 /* SceneDelegate.swift */,
-				E75EF5BA23E1296C00B8C263 /* ViewController.swift */,
-				E75EF5BC23E1296C00B8C263 /* Main.storyboard */,
 				E75EF5BF23E1296D00B8C263 /* Assets.xcassets */,
 				E75EF5C123E1296D00B8C263 /* LaunchScreen.storyboard */,
 				E75EF5C423E1296D00B8C263 /* Info.plist */,
@@ -128,6 +169,54 @@
 			path = CatsUITests;
 			sourceTree = "<group>";
 		};
+		E75EF5EE23E15A3F00B8C263 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E75EF5EF23E15A5500B8C263 /* Molecules */,
+				E75EF5F023E15A6100B8C263 /* Organisms */,
+				E75EF5BC23E1296C00B8C263 /* Main.storyboard */,
+				E75EF5BA23E1296C00B8C263 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E75EF5EF23E15A5500B8C263 /* Molecules */ = {
+			isa = PBXGroup;
+			children = (
+				E75EF5E623E129AD00B8C263 /* FactTableViewCell.xib */,
+				E75EF5E823E12DDF00B8C263 /* FactTableViewCell.swift */,
+				E75EF5F123E15B5500B8C263 /* HeadingView.xib */,
+				E75EF5F323E15BE100B8C263 /* HeadingView.swift */,
+			);
+			path = Molecules;
+			sourceTree = "<group>";
+		};
+		E75EF5F023E15A6100B8C263 /* Organisms */ = {
+			isa = PBXGroup;
+			children = (
+				E75EF5EA23E12E7C00B8C263 /* FactTableView.swift */,
+			);
+			path = Organisms;
+			sourceTree = "<group>";
+		};
+		E75EF5F523E164B200B8C263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E75EF60423E1931500B8C263 /* ObjectMapper.framework */,
+				E75EF5FF23E1763600B8C263 /* SwiftyJSON.framework */,
+				E75EF5F623E164B300B8C263 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E75EF5FC23E1654500B8C263 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E75EF60723E1936000B8C263 /* ApiRequest.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +227,8 @@
 				E75EF5AF23E1296C00B8C263 /* Sources */,
 				E75EF5B023E1296C00B8C263 /* Frameworks */,
 				E75EF5B123E1296C00B8C263 /* Resources */,
+				E75EF5F923E164B300B8C263 /* Embed Frameworks */,
+				E75EF5FA23E164CB00B8C263 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,9 +323,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75EF5F223E15B5500B8C263 /* HeadingView.xib in Resources */,
 				E75EF5C323E1296D00B8C263 /* LaunchScreen.storyboard in Resources */,
 				E75EF5C023E1296D00B8C263 /* Assets.xcassets in Resources */,
 				E75EF5BE23E1296C00B8C263 /* Main.storyboard in Resources */,
+				E75EF5E723E129AD00B8C263 /* FactTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +347,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E75EF5FA23E164CB00B8C263 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E75EF5AF23E1296C00B8C263 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E75EF5BB23E1296C00B8C263 /* ViewController.swift in Sources */,
+				E75EF5F423E15BE200B8C263 /* HeadingView.swift in Sources */,
+				E75EF5EB23E12E7C00B8C263 /* FactTableView.swift in Sources */,
 				E75EF5B723E1296C00B8C263 /* AppDelegate.swift in Sources */,
 				E75EF5B923E1296C00B8C263 /* SceneDelegate.swift in Sources */,
+				E75EF60823E1936000B8C263 /* ApiRequest.swift in Sources */,
+				E75EF5E923E12DDF00B8C263 /* FactTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +555,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Cats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +576,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Cats/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
