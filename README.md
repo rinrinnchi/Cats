@@ -1,4 +1,4 @@
-A very simple UIKit sample app (all about Cats <3)
+### A very simple UIKit sample app (all about Cats <3)
 
 Free helpful cat APIs =^.^=
 + [Cats Fact](https://alexwohlbruck.github.io/cat-facts/) : Daily cat facts
