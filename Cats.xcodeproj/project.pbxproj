@@ -27,6 +27,10 @@
 		E75EF60523E1931500B8C263 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF60423E1931500B8C263 /* ObjectMapper.framework */; };
 		E75EF60623E1931500B8C263 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E75EF60423E1931500B8C263 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E75EF60823E1936000B8C263 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF60723E1936000B8C263 /* ApiRequest.swift */; };
+		E75EF60C23E19BCD00B8C263 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75EF60B23E19BCD00B8C263 /* ImageCollectionViewCell.xib */; };
+		E75EF60E23E19C8600B8C263 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF60D23E19C8600B8C263 /* ImageCollectionViewCell.swift */; };
+		E75EF61123E19D4100B8C263 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF61023E19D4100B8C263 /* UIImage+.swift */; };
+		E75EF61323E19E3700B8C263 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EF61223E19E3700B8C263 /* ImageCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,10 @@
 		E75EF5FF23E1763600B8C263 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		E75EF60423E1931500B8C263 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		E75EF60723E1936000B8C263 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		E75EF60B23E19BCD00B8C263 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		E75EF60D23E19C8600B8C263 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		E75EF61023E19D4100B8C263 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		E75EF61223E19E3700B8C263 /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,7 @@
 		E75EF5B523E1296C00B8C263 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				E75EF60F23E19D2F00B8C263 /* Extensions */,
 				E75EF5FC23E1654500B8C263 /* DataLayer */,
 				E75EF5EE23E15A3F00B8C263 /* Views */,
 				E75EF5B623E1296C00B8C263 /* AppDelegate.swift */,
@@ -187,6 +196,8 @@
 				E75EF5E823E12DDF00B8C263 /* FactTableViewCell.swift */,
 				E75EF5F123E15B5500B8C263 /* HeadingView.xib */,
 				E75EF5F323E15BE100B8C263 /* HeadingView.swift */,
+				E75EF60B23E19BCD00B8C263 /* ImageCollectionViewCell.xib */,
+				E75EF60D23E19C8600B8C263 /* ImageCollectionViewCell.swift */,
 			);
 			path = Molecules;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				E75EF5EA23E12E7C00B8C263 /* FactTableView.swift */,
+				E75EF61223E19E3700B8C263 /* ImageCollectionView.swift */,
 			);
 			path = Organisms;
 			sourceTree = "<group>";
@@ -215,6 +227,14 @@
 				E75EF60723E1936000B8C263 /* ApiRequest.swift */,
 			);
 			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		E75EF60F23E19D2F00B8C263 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E75EF61023E19D4100B8C263 /* UIImage+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +347,7 @@
 				E75EF5C323E1296D00B8C263 /* LaunchScreen.storyboard in Resources */,
 				E75EF5C023E1296D00B8C263 /* Assets.xcassets in Resources */,
 				E75EF5BE23E1296C00B8C263 /* Main.storyboard in Resources */,
+				E75EF60C23E19BCD00B8C263 /* ImageCollectionViewCell.xib in Resources */,
 				E75EF5E723E129AD00B8C263 /* FactTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,9 +398,12 @@
 			files = (
 				E75EF5BB23E1296C00B8C263 /* ViewController.swift in Sources */,
 				E75EF5F423E15BE200B8C263 /* HeadingView.swift in Sources */,
+				E75EF60E23E19C8600B8C263 /* ImageCollectionViewCell.swift in Sources */,
 				E75EF5EB23E12E7C00B8C263 /* FactTableView.swift in Sources */,
+				E75EF61323E19E3700B8C263 /* ImageCollectionView.swift in Sources */,
 				E75EF5B723E1296C00B8C263 /* AppDelegate.swift in Sources */,
 				E75EF5B923E1296C00B8C263 /* SceneDelegate.swift in Sources */,
+				E75EF61123E19D4100B8C263 /* UIImage+.swift in Sources */,
 				E75EF60823E1936000B8C263 /* ApiRequest.swift in Sources */,
 				E75EF5E923E12DDF00B8C263 /* FactTableViewCell.swift in Sources */,
 			);

@@ -12,17 +12,30 @@ import Alamofire
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: FactTableView!
+    @IBOutlet weak var collectionView: ImageCollectionView!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        stackView.isHidden = true
+        indicatorView.startAnimating()
         
         let apiRequest = ApiRequest()
-        apiRequest.facts(completionHandler: {
-            [weak self] results, error in
+        apiRequest.facts(completionHandler: { [weak self] results, error in
             if case .failure = error {
                 return
             }
             self?.tableView.data = results
+            self?.stackView.isHidden = false
+            self?.indicatorView.stopAnimating()
+        })
+        
+        apiRequest.images(completionHandler: { [weak self] results, error in
+            if case .failure = error {
+                return
+            }
+            self?.collectionView.data = results
         })
     }
 }

@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,36 +17,80 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TNe-4u-83K">
-                                <rect key="frame" x="0.0" y="44" width="414" height="832"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="880"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfh-Ph-Ap3" customClass="HeadingView" customModule="Cats" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="DhO-Mr-4hB"/>
+                                            <constraint firstAttribute="height" constant="90" id="DhO-Mr-4hB"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="heading" value="Daily Cat Facts"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="idea"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gm9-BC-PtX" customClass="FactTableView" customModule="Cats" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="60" width="414" height="772"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gm9-BC-PtX" customClass="FactTableView" customModule="Cats" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="414" height="400"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" placeholder="YES" id="Yb5-qy-kK1"/>
+                                        </constraints>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCw-Zi-hcx" customClass="HeadingView" customModule="Cats" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="490" width="414" height="90"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="q8X-s3-bRo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heading" value="Cat Images"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="camera"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jw2-wg-0YC" customClass="ImageCollectionView" customModule="Cats" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="580" width="414" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" placeholder="YES" id="JAz-v1-HDo"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tXV-pb-VnL">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7V5-zV-TS6">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SKo-TV-Xv3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UOr-7u-DV4">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TNe-4u-83K" secondAttribute="trailing" id="80Z-eE-Nki"/>
                             <constraint firstItem="TNe-4u-83K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RNY-kd-KIa"/>
-                            <constraint firstAttribute="bottom" secondItem="TNe-4u-83K" secondAttribute="bottom" constant="20" symbolic="YES" id="Va4-GI-ZlR"/>
                             <constraint firstItem="TNe-4u-83K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cFs-ik-IYx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="jw2-wg-0YC" id="fE6-Sk-YqT"/>
+                        <outlet property="indicatorView" destination="UOr-7u-DV4" id="dIB-Ij-Bkf"/>
+                        <outlet property="stackView" destination="TNe-4u-83K" id="kgG-22-wTk"/>
                         <outlet property="tableView" destination="Gm9-BC-PtX" id="7bI-zT-G8x"/>
                     </connections>
                 </viewController>
@@ -54,4 +99,8 @@
             <point key="canvasLocation" x="139" y="113"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="512" height="512"/>
+        <image name="idea" width="512" height="512"/>
+    </resources>
 </document>

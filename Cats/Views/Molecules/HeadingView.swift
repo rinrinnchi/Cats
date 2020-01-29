@@ -8,12 +8,19 @@
 
 import UIKit
 
-class HeadingView: UIView {
+final class HeadingView: UIView {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     @IBInspectable var heading: String? {
         didSet {
             label.text = heading
+        }
+    }
+    @IBInspectable var image: UIImage? {
+        didSet {
+            imageView.image = image
         }
     }
     

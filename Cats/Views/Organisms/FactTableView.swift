@@ -13,7 +13,18 @@ final class FactTableView: UITableView {
     var data: [String] = [] {
         didSet {
             reloadData()
+            invalidateIntrinsicContentSize()
         }
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        layoutIfNeeded()
+        return contentSize
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        invalidateIntrinsicContentSize()
     }
     
     override func awakeFromNib() {
@@ -24,7 +35,9 @@ final class FactTableView: UITableView {
     func loadNib() {
         dataSource = self
         delegate = self
-        register(UINib.init(nibName: "FactTableViewCell", bundle: nil), forCellReuseIdentifier: "FactTableViewCell")
+        
+        let nib = UINib.init(nibName: "FactTableViewCell", bundle: nil)
+        register(nib, forCellReuseIdentifier: "FactTableViewCell")
         tableFooterView = UIView()
         rowHeight = UITableView.automaticDimension
     }
